@@ -1,0 +1,158 @@
+{
+  "users": [
+    {
+      "userData": null,
+      "fullName": "esma",
+      "password": "d08e6677d8095db46b3218206e97991836384a63",
+      "userName": "es",
+      "id": 1
+    }
+  ],
+  
+  "news":[
+    {
+        "id":1,
+        "image_url":"http://via.placeholder.com/800",
+        "publishedAt":"2022-01-11T12:10:00Z",
+        "title":"MTN Uganda introduces overdraft facility as it step-ups competition in digital lending space",
+        "source":"BBC",
+        "content":"oe Biden and Kamala Harris readied to speak at the Atlanta University Center Consortium in Georgia on Tuesday, nearly a dozen protesters gathered outside the building, holding up signs that read “end the filibuster” and bore messages of support for federal voting rights protections."
+    },
+    {   
+        "id":2,
+        "image_url":"http://via.placeholder.com/600",
+        "publishedAt": "2022-01-13T06:25:49Z",
+        "title":"MTN Uganda introduces overdraft facility as it step-ups competition in digital lending space",
+        "source":"CNN Indonesia",
+        "content":"oe Biden and Kamala Harris readied to speak at the Atlanta University Center Consortium in Georgia on Tuesday, nearly a dozen protesters gathered outside the building, holding up signs that read “end the filibuster” and bore messages of support for federal voting rights protections."
+    },
+    {
+        "id":3, 
+        "image_url":"http://via.placeholder.com/600",
+        "publishedAt": "2022-01-13T04:28:00Z",
+        "title":"MTN Uganda introduces overdraft facility as it step-ups competition in digital lending space",
+        "source":"ANC",
+        "content":"oe Biden and Kamala Harris readied to speak at the Atlanta University Center Consortium in Georgia on Tuesday, nearly a dozen protesters gathered outside the building, holding up signs that read “end the filibuster” and bore messages of support for federal voting rights protections."
+    },
+    {
+        "id":4,
+        "image_url":"http://via.placeholder.com/600",
+        "publishedAt": "2022-01-13T03:30:00Z",
+        "title":"MTN Uganda introduces overdraft facility as it step-ups competition in digital lending space",
+        "source":"Guardian",
+        "content":"oe Biden and Kamala Harris readied to speak at the Atlanta University Center Consortium in Georgia on Tuesday, nearly a dozen protesters gathered outside the building, holding up signs that read “end the filibuster” and bore messages of support for federal voting rights protections."
+    },
+    {
+        "id":5,
+        "image_url":"http://via.placeholder.com/300",
+        "publishedAt": "2022-01-13T02:36:00Z",
+        "title":"MTN Uganda introduces overdraft facility as it step-ups competition in digital lending space",
+        "source":"Tele",
+        "content":"oe Biden and Kamala Harris readied to speak at the Atlanta University Center Consortium in Georgia on Tuesday, nearly a dozen protesters gathered outside the building, holding up signs that read “end the filibuster” and bore messages of support for federal voting rights protections."
+    },
+    {
+        "id":6,
+        "image_url":"http://via.placeholder.com/600",
+        "publishedAt": "2022-01-04T21:10:00Z",
+        "title":"MTN Uganda introduces overdraft facility as it step-ups competition in digital lending space",
+        "source":"CNN Indonesia",
+        "content":"oe Biden and Kamala Harris readied to speak at the Atlanta University Center Consortium in Georgia on Tuesday, nearly a dozen protesters gathered outside the building, holding up signs that read “end the filibuster” and bore messages of support for federal voting rights protections."
+    },
+    {
+        "id":7,
+        "image_url":"http://via.placeholder.com/600",
+        "publishedAt": "2021-10-26T17:10:22Z",
+        "title":"MTN Uganda introduces overdraft facility as it step-ups competition in digital lending space",
+        "source":"CNN Indonesia",
+        "content":"oe Biden and Kamala Harris readied to speak at the Atlanta University Center Consortium in Georgia on Tuesday, nearly a dozen protesters gathered outside the building, holding up signs that read “end the filibuster” and bore messages of support for federal voting rights protections."
+    },
+    {
+        "id":8,
+        "image_url":"http://via.placeholder.com/600",
+        "publishedAt": "2021-10-26T14:31:00Z",
+        "title":"MTN Uganda introduces overdraft facility as it step-ups competition in digital lending space",
+        "source":"CNN Indonesia",
+        "content":"oe Biden and Kamala Harris readied to speak at the Atlanta University Center Consortium in Georgia on Tuesday, nearly a dozen protesters gathered outside the building, holding up signs that read “end the filibuster” and bore messages of support for federal voting rights protections."
+    },
+    {
+        "id":9,
+        "image_url":"http://via.placeholder.com/600",
+        "publishedAt": "2021-10-04T10:30:19Z",
+        "title":"MTN Uganda introduces overdraft facility as it step-ups competition in digital lending space",
+        "source":"CNN Indonesia",
+        "content":"oe Biden and Kamala Harris readied to speak at the Atlanta University Center Consortium in Georgia on Tuesday, nearly a dozen protesters gathered outside the building, holding up signs that read “end the filibuster” and bore messages of support for federal voting rights protections."
+    },
+    {
+        "id":10,
+        "image_url":"http://via.placeholder.com/600",
+        "publishedAt":"2022-01-11T12:10:00Z",
+        "title":"MTN Uganda introduces overdraft facility as it step-ups competition in digital lending space",
+        "source":"CNN Indonesia",
+        "content":"oe Biden and Kamala Harris readied to speak at the Atlanta University Center Consortium in Georgia on Tuesday, nearly a dozen protesters gathered outside the building, holding up signs that read “end the filibuster” and bore messages of support for federal voting rights protections."
+    },
+    {
+        "id":11,
+        "image_url":"http://via.placeholder.com/600",
+        "publishedAt":"2022-01-11T12:10:00Z",
+        "title":"MTN Uganda introduces overdraft facility as it step-ups competition in digital lending space",
+        "source":"CNN Indonesia",
+        "content":"oe Biden and Kamala Harris readied to speak at the Atlanta University Center Consortium in Georgia on Tuesday, nearly a dozen protesters gathered outside the building, holding up signs that read “end the filibuster” and bore messages of support for federal voting rights protections."
+    },
+    {
+        "id":12,
+        "image_url":"http://via.placeholder.com/600",
+        "publishedAt": "2020-05-28T13:56:57Z",
+        "title":"MTN Uganda introduces overdraft facility as it step-ups competition in digital lending space",
+        "source":"CNN Indonesia",
+        "content":"oe Biden and Kamala Harris readied to speak at the Atlanta University Center Consortium in Georgia on Tuesday, nearly a dozen protesters gathered outside the building, holding up signs that read “end the filibuster” and bore messages of support for federal voting rights protections."
+    },
+    {
+        "id":13,
+        "image_url":"http://via.placeholder.com/600",
+        "publishedAt":"2022-01-11T12:10:00Z",
+        "title":"MTN Uganda introduces overdraft facility as it step-ups competition in digital lending space",
+        "source":"CNN Indonesia",
+        "content":"oe Biden and Kamala Harris readied to speak at the Atlanta University Center Consortium in Georgia on Tuesday, nearly a dozen protesters gathered outside the building, holding up signs that read “end the filibuster” and bore messages of support for federal voting rights protections."
+    },
+    {
+        "id":14,
+        "image_url":"http://via.placeholder.com/600",
+        "publishedAt":"2022-01-11T12:10:00Z",
+        "title":"MTN Uganda introduces overdraft facility as it step-ups competition in digital lending space",
+        "source":"CNN Indonesia",
+        "content":"oe Biden and Kamala Harris readied to speak at the Atlanta University Center Consortium in Georgia on Tuesday, nearly a dozen protesters gathered outside the building, holding up signs that read “end the filibuster” and bore messages of support for federal voting rights protections."
+    },
+    {
+        "id":15,
+        "image_url":"http://via.placeholder.com/600",
+        "publishedAt":"2022-01-11T12:10:00Z",
+        "title":"MTN Uganda introduces overdraft facility as it step-ups competition in digital lending space",
+        "source":"CNN Indonesia",
+        "content":"oe Biden and Kamala Harris readied to speak at the Atlanta University Center Consortium in Georgia on Tuesday, nearly a dozen protesters gathered outside the building, holding up signs that read “end the filibuster” and bore messages of support for federal voting rights protections."
+    },
+    {
+        "id":16,
+        "image_url":"http://via.placeholder.com/600",
+        "publishedAt":"2022-01-11T12:10:00Z",
+        "title":"MTN Uganda introduces overdraft facility as it step-ups competition in digital lending space",
+        "source":"CNN Indonesia",
+        "content":"oe Biden and Kamala Harris readied to speak at the Atlanta University Center Consortium in Georgia on Tuesday, nearly a dozen protesters gathered outside the building, holding up signs that read “end the filibuster” and bore messages of support for federal voting rights protections."
+    },
+    {
+        "id":17,
+        "image_url":"http://via.placeholder.com/600",
+        "publishedAt":"2022-01-11T12:10:00Z",
+        "title":"MTN Uganda introduces overdraft facility as it step-ups competition in digital lending space",
+        "source":"CNN Indonesia",
+        "content":"oe Biden and Kamala Harris readied to speak at the Atlanta University Center Consortium in Georgia on Tuesday, nearly a dozen protesters gathered outside the building, holding up signs that read “end the filibuster” and bore messages of support for federal voting rights protections."
+    },
+    {
+        "id":18,
+        "image_url":"http://via.placeholder.com/600",
+        "publishedAt":"2022-01-11T12:10:00Z",
+        "title":"MTN Uganda introduces overdraft facility as it step-ups competition in digital lending space",
+        "source":"CNN Indonesia",
+        "content":"oe Biden and Kamala Harris readied to speak at the Atlanta University Center Consortium in Georgia on Tuesday, nearly a dozen protesters gathered outside the building, holding up signs that read “end the filibuster” and bore messages of support for federal voting rights protections."
+    }
+]
+}
