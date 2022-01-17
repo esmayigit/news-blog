@@ -20,7 +20,7 @@ export default createStore({
     },
     _saltKey: (state) => state.saltKey,
     newsListById: (state) => (id) => {
-      return state.newsList.find((news) => news.id === id);
+      return state.newsList.find((news) => news.id == id);
     },
   },
   mutations: {

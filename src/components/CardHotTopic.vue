@@ -3,7 +3,7 @@
     class="flex w-11/12 justify-center h-[200px] mx-auto px-4 sm:px-0 sm:h-[300px] relative"
   >
     <img
-      :src="news.image_url"
+      :src="latestNews.image_url"
       alt=""
       class="block w-full h-full rounded-lg aspect-video object-cover"
     />
@@ -13,7 +13,7 @@
       <h1
         class="text-base sm:text-2xl md:text-3xl lg:text-4xl text-slate-100 font-extrabold line-clamp-2"
       >
-        {{ news.title }}
+        {{ latestNews.title }}
       </h1>
       <div class="flex space-x-4">
         <p class="text-slate-100 text-[8px] sm:text-xs">2 hours ago</p>
@@ -23,13 +23,8 @@
   </div>
 </template>
 <script setup>
+import { computed } from "vue";
 import { useStore } from "vuex";
-
 const store = useStore();
-const news = store.dispatch("getAllNews");
-
-// const props=defineProps({
-//     news:{type:Object,required:true},
-
-// });
+const latestNews = computed(() => store.getters.newsListById(2));
 </script>

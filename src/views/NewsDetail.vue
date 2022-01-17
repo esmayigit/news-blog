@@ -30,6 +30,7 @@ const route = useRoute();
 const id = route.params.id;
 console.log(id);
 const singleNews = computed(() => store.getters.newsListById(id));
+console.log(singleNews.value);
 const publishTime = moment(singleNews.value.publishTime).format(
   "dddd,MMMM Do YYYY, h:mm:ss a"
 );
