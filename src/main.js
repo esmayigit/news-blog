@@ -14,6 +14,8 @@ const app = createApp(App);
 app.use(router);
 app.component("TheHeader", TheHeader);
 app.component("TheFooter", TheFooter);
+
 app.use(store);
 app.config.globalProperties.$useAxios = useAxios;
+app.provide("useAxios", useAxios);
 app.mount("#app");

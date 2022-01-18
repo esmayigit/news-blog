@@ -10,6 +10,7 @@ export default createStore({
     user: null,
     saltKey: "newsfeedblog123!?asd",
     newsList: [],
+    loadingStatus: true,
   },
   getters: {
     _isAuthenticated: (state) => state.user !== null,
@@ -22,6 +23,9 @@ export default createStore({
     newsListById: (state) => (id) => {
       return state.newsList.find((news) => news.id == id);
     },
+    loadingStatus(state) {
+      return state.loadingStatus;
+    },
   },
   mutations: {
     setUser(state, user) {
@@ -31,12 +35,25 @@ export default createStore({
     UPDATE_NEWSLIST(state, payload) {
       state.newsList = payload;
     },
+    logoutUser(state) {
+      state.user = null;
+    },
+    loadingStatus(state, newLoadingStatus) {
+      state.loadingStatus = newLoadingStatus;
+    },
   },
   actions: {
     getAllNews({ commit }) {
-      useAxios.get("/news").then((response) => {
-        commit("UPDATE_NEWSLIST", response.data);
-      });
+      commit("loadingStatus", true);
+
+      useAxios
+        .get("/news")
+        .then((response) => {
+          commit("UPDATE_NEWSLIST", response.data);
+
+          // commit("loadingStatus", false);
+        })
+        .catch((error) => console.log(error));
     },
   },
   plugins: [

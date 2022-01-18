@@ -34,11 +34,11 @@
 </template>
 
 <script setup>
+import CryptoJS from "crypto-js";
+
 import { ref, inject } from "vue";
 import { useStore } from "vuex";
 import { useRouter } from "vue-router";
-
-import CryptoJS from "crypto-js";
 
 const useAxios = inject("useAxios");
 const store = useStore();
@@ -51,12 +51,12 @@ const userData = ref({
 
 const onSubmit = () => {
   const password = CryptoJS.HmacSHA1(
-    this.userData.password,
-    this.$store.getters._saltKey
+    userData.value.password,
+    store.getters._saltKey
   ).toString();
   console.log(password);
   useAxios
-    .get(`/users?userName=${this.userData.userName}&password=${password}`)
+    .get(`/users?userName=${userData.value.userName}&password=${password}`)
     .then((response) => {
       if (response?.data?.length > 0) {
         store.commit("setUser", response?.data[0]);

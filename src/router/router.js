@@ -4,6 +4,7 @@ const routes = [
   {
     name: "HomePage",
     path: "/",
+
     component: () => import("../views/Home.vue"),
   },
   {
@@ -37,9 +38,9 @@ router.beforeEach((to, _, next) => {
   const authNotRequiredRoutes = ["LoginPage", "RegisterPage"];
   const _isAuthenticated = store.getters._isAuthenticated;
 
-  if (authNotRequiredRoutes.indexOf(to.name) > -1 && _isAuthenticated)
+  if (authNotRequiredRoutes.indexOf(to.name) > -1 && _isAuthenticated) {
     next(false);
-
+  }
   if (authRequiredRoutes.indexOf(to.name) > -1) {
     if (_isAuthenticated) next();
     else next({ name: "LoginPage" });

@@ -1,5 +1,6 @@
 <template>
   <div
+    v-if="latestNews"
     class="flex w-11/12 justify-center h-[200px] mx-auto px-4 sm:px-0 sm:h-[300px] relative"
   >
     <img
@@ -26,5 +27,6 @@
 import { computed } from "vue";
 import { useStore } from "vuex";
 const store = useStore();
+
 const latestNews = computed(() => store.getters.newsListById(2));
 </script>

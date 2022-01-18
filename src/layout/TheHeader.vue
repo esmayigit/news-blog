@@ -1,7 +1,10 @@
 <template>
-  <header class="p-8 relative z-20 bg-gray-100">
+  <header class="p-8 relative z-20 w-full top-0 bg-gray-100">
     <nav class="flex justify-between">
-      <div class="flex space-x-4 items-center font-bold text-base">
+      <div
+        class="flex space-x-4 items-center font-bold text-base"
+        @click="hiddenMenu = false"
+      >
         <a href="#" class="text-white bg-black p-2 rounded-lg">News</a>
         <a href="#" class="text-black">Portal</a>
       </div>
@@ -21,13 +24,12 @@
             />
           </a>
         </transition>
-        <a href="#">
-          <img
-            src="https://img.icons8.com/fluency-systems-regular/48/000000/menu--v1.png"
-            class="w-6 h-6"
-            @click="hiddenMenu = !hiddenMenu"
-          />
-        </a>
+
+        <img
+          src="https://img.icons8.com/fluency-systems-regular/48/000000/menu--v1.png"
+          class="w-6 h-6 hover:cursor-pointer"
+          @click="hiddenMenu = !hiddenMenu"
+        />
       </div>
     </nav>
   </header>
@@ -37,7 +39,7 @@
     @enter="enter"
     @leave="leave"
   >
-    <HiddenNavbarMenu v-if="hiddenMenu" />
+    <HiddenNavbarMenu v-if="hiddenMenu" @hide-menu="hiddenMenu = false" />
   </transition>
 </template>
 
@@ -67,8 +69,7 @@ const leave = (el, done) => {
 };
 
 const hiddenMenu = ref(false);
+
 const hiddenSearchBar = ref(false);
 const searchQuery = ref("");
-
-//
 </script>
