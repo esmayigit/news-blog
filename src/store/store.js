@@ -10,6 +10,7 @@ export default createStore({
     user: null,
     saltKey: "newsfeedblog123!?asd",
     newsList: [],
+    categoryList: [],
     loadingStatus: true,
   },
   getters: {
@@ -41,8 +42,17 @@ export default createStore({
     loadingStatus(state, newLoadingStatus) {
       state.loadingStatus = newLoadingStatus;
     },
+    defineCategory(state, payload) {
+      state.categoryList = payload;
+    },
   },
   actions: {
+    getCategoryList({ commit }) {
+      useAxios.get("/categories").then((response) => {
+        commit("defineCategory", response.data);
+      });
+    },
+
     getAllNews({ commit }) {
       commit("loadingStatus", true);
 

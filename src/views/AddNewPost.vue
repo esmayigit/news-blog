@@ -49,32 +49,57 @@
           rows="10"
           class="border-2 border-fuchsia-100 mb-4"
         ></textarea>
-        <button
-          type="submit"
-          class="bg-red-200 px-6 py-2 rounded-lg shadow-inner active:shadow-none shadow-orange-700"
-          @click="onSave"
-        >
-          Submit
-        </button>
+        <select v-model="newsData.categoryId">
+          <option disabled value="">Select Category</option>
+          <option
+            v-for="category in categoryList"
+            :key="category.id"
+            :value="category.id"
+          >
+            {{ category.name }}
+          </option>
+        </select>
+        <div class="flex justify-center space-x-4">
+          <button
+            type="submit"
+            class="bg-red-200 px-6 py-2 rounded-lg shadow-inner active:shadow-none shadow-orange-700"
+          >
+            Cancel
+          </button>
+          <button
+            type="submit"
+            class="bg-red-200 px-6 py-2 rounded-lg shadow-inner active:shadow-none shadow-orange-700"
+            @click="onSave"
+          >
+            Submit
+          </button>
+        </div>
       </div>
     </form>
   </div>
 </template>
 
 <script setup>
-import { inject, onMounted, reactive, ref } from "vue";
-//import { useStore } from "vuex";
+import { computed, inject, onMounted, reactive, ref } from "vue";
+import { useStore } from "vuex";
 import { useRouter } from "vue-router";
 const useAxios = inject("useAxios");
 const router = useRouter();
-//const store = useStore();
+const store = useStore();
 const newsData = reactive({
   publishAt: null,
   title: null,
   image_url: null,
   source: null,
   content: null,
+  categoryId: null,
 });
+
+const getCategory = () => store.dispatch("getCategoryList");
+const categoryList = computed(() => store.state.categoryList);
+const currentUser = computed(() => store.getters._getCurrentUser?.id);
+
+console.log(currentUser.value);
 const imageUrl = ref("");
 let base64String = ref("");
 
@@ -96,13 +121,15 @@ const handleFileUpload = async (e) => {
   base64String = await convertBase64(file);
   console.log(base64String);
 };
-onMounted(handleFileUpload);
+
+onMounted(handleFileUpload, getCategory);
 
 const onSave = () => {
   const saveData = {
     ...newsData,
     publishAt: new Date(),
     image_url: base64String,
+    userId: currentUser.value,
   };
   useAxios.post("/news", saveData).then((response) => {
     console.log(response.data);
