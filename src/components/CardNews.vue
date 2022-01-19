@@ -22,7 +22,7 @@
 <script setup>
 import { defineProps } from "vue";
 import moment from "moment";
-const timeToNow = moment(props.news.publishedAt).fromNow();
+const timeToNow = moment(props.news.publishAt).fromNow();
 
 const props = defineProps({
   news: { type: Object, required: true },
